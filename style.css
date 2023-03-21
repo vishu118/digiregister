@@ -1,0 +1,10 @@
+.logo{
+    width: 100px;
+
+}
+#sort{
+    border: 1px solid rgb(218, 212, 212);
+    outline: none;
+    padding: 5px;
+    border-radius: 5px;
+}
