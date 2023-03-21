@@ -135,75 +135,18 @@ transition: all 0.2s ease-in-out;
     color: white;
     transition: all 0.3s ease-in-out;
 }
-  /* .login-container{
-    width: 100%;
-    height: 92vh;
-    background-color: #e9e1e1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+
+
+
+.form{
+    display: none;
+      }
+    
+      .signupForm{
+        display: block;
+      }
+    
+      .loginForm{
+        display: block;
+      }
   
-  }
-  .login-innerContainer{
-    width: 25rem;
-  padding: 2rem;
-  background-color:  #f3c0c0;
-  color: #fff;
-  font-size: 1.2rem;
-  border-radius: 20px;
-  display: none;
-  }
-  .login-innerContainer h2{
-  text-align: center;
-  margin-bottom: 1rem;
-  font-size: 2rem;
-  }
-  
-  .form div{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 1rem;
-   
-  }
-  
-  /* .form div input{
-    border: none;
-    background:  #e9e1e1;
-    color: #fff;
-    padding: 0.5rem 1rem;
-    margin: 0.5rem 0;
-    outline: none;
-    font-size: 1rem;
-    border-radius: 8px;
-  } */
-  .form div input::placeholder{
-    color: rgb(26, 23, 23);
-  }
-  
-  .btns{
-    border: none;
-    font-size: 1rem;
-    padding: 0.5rem 2rem;
-    cursor: pointer;
-    background: rgb(231, 148, 118);
-    color: #fff;
-    width: 40%;
-    border-radius: 0.5rem;
-  }
-  .btns:hover{
-      background: rgb(9, 95, 9);
-    color: #fff;
-  }
-  
-  .entries{
-    background-color: grey;
-    display: flex;
-    padding: 1rem;
-    margin-top: 1rem;
-    border-radius: 8px;
-  }
-  
-  .data{
-    font-size: 1.5rem;
-  } 
