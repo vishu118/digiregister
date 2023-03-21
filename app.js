@@ -1,15 +1,14 @@
-// const loginPop = document.getElementById('loginPop')
-// const loginbtn = document.getElementById('login')
 
-// loginbtn.addEventListener('click',()=>{
-//    loginPop.style.display = "none" ? loginPop.style.display = "block":loginPop.style.display="none"
-// })
 
+    
+
+const loginMain = document.getElementById('login')
 const signupBtn = document.querySelector(".signupBtn")
 const loginBtn = document.querySelector(".loginBtn")
 const moveBtn = document.querySelector(".moveBtn")
 const signup = document.querySelector(".signup")
 const login = document.querySelector(".login")
+const modalForm = document.querySelector(".modalForm")
 
 
 loginBtn.addEventListener('click',()=>{
@@ -28,5 +27,12 @@ signupBtn.addEventListener('click',()=>{
    
 })
 
+
+loginMain.addEventListener('click',()=>{
+    modalForm.style.display = "flex" 
+    // if( modalForm.style.display = "flex" ){
+    //     modalForm.style.display = "none" 
+    // }
+ })
 
 

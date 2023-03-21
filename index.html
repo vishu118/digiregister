@@ -29,10 +29,10 @@
         <a class="navbar-brand">DigiRegister</a>
 
         <select name="" id="sort">
-            <option value="">SORT BY NAME</option>
-            <option value="inc" class="sortBtn">A-Z</option>
-            <option value="dec" class="sortBtn">Z-A</option>
-          </select>
+          <option value="">SORT BY NAME</option>
+          <option value="inc" class="sortBtn">A-Z</option>
+          <option value="dec" class="sortBtn">Z-A</option>
+        </select>
         <form class="d-flex">
           <input
             class="form-control me-2"
@@ -42,78 +42,54 @@
           />
           <button class="btn btn-outline-success" type="submit">Search</button>
         </form>
-        <button class="btn btn-outline-success" type="submit" id="login">Login</button>
+        <button class="btn btn-outline-success" type="submit" id="login">
+          Login
+        </button>
       </div>
     </nav>
 
     <div class="login-container">
-        <div class="modalForm">
-            <div class="actionBtns">
-                <button class="actionBtn signupBtn">SignUp</button>
-                <button class="actionBtn loginBtn">Login</button>
-                <button class=" moveBtn ">SignUp</button>
+      <div class="modalForm">
+        <div class="actionBtns">
+          <button class="actionBtn signupBtn">SignUp</button>
+          <button class="actionBtn loginBtn">Login</button>
+          <button class="moveBtn">SignUp</button>
+        </div>
+
+        <div class="userForm">
+          <form action="" class="form signupForm signup">
+            <div class="inputGroup">
+              <input type="text" placeholder="Name" />
+            </div>
+            <div class="inputGroup">
+              <input type="Email" placeholder="Email" />
+            </div>
+            <div class="inputGroup">
+              <input type="password" placeholder="Password" />
+            </div>
+            <div class="inputGroup">
+              <input type="number" placeholder="Phone Number" />
             </div>
 
-            <div class="userForm">
-              <form action="" class="form signupForm signup">
-                <div class="inputGroup">
-                    <input type="text" placeholder="Name">
-                </div>
-                <div class="inputGroup">
-                    <input type="Email" placeholder="Email">
-                </div>
-                <div class="inputGroup">
-                    <input type="password" placeholder="Password">
-                </div>
-                <div class="inputGroup">
-                    <input type="number" placeholder="Phone Number">
-                </div>
-                
+            <button type="submit" class="submitBtn">Submit</button>
+          </form>
 
-                <button type="submit" class="submitBtn">Submit</button>
-              </form>
-
-              <form action="" class="form login">
-    
-                <div class="inputGroup">
-                    <input type="Email" placeholder="Email">
-                </div>
-                <div class="inputGroup">
-                    <input type="password" placeholder="Password">
-                </div>
-              
-                
-
-                <button type="submit" class="submitBtn">Login</button>
-              </form>
+          <form action="" class="form login">
+            <div class="inputGroup">
+              <input type="Email" placeholder="Email" />
             </div>
-           </div>
+            <div class="inputGroup">
+              <input type="password" placeholder="Password" />
+            </div>
 
+            <button type="submit" class="submitBtn">Login</button>
+          </form>
+        </div>
       </div>
+    </div>
 
-
-      
-      
-
-    <script src="app.js"></script>
-    <script type="module">
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.18.0/firebase-app.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
-
-  // Your web app's Firebase configuration
-  const firebaseConfig = {
-    apiKey: "AIzaSyDwNqBgZwsZL3WRHpJPfTsythFL50gut18",
-    authDomain: "digiregister-14259.firebaseapp.com",
-    projectId: "digiregister-14259",
-    storageBucket: "digiregister-14259.appspot.com",
-    messagingSenderId: "585734817251",
-    appId: "1:585734817251:web:97d981e520dc10d17b0cd6"
-  };
-
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-</script>
+    
+    
+      <script src="app.js"></script>
   </body>
 </html>
