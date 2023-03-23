@@ -43,7 +43,7 @@
           <button class="btn btn-outline-success" type="submit">Search</button>
         </form>
         <button class="btn btn-outline-success" type="submit" id="login">
-          Login
+          SignUp
         </button>
       </div>
     </nav>
@@ -62,27 +62,27 @@
               <input type="text" placeholder="Name" />
             </div>
             <div class="inputGroup">
-              <input type="Email" placeholder="Email" />
+              <input type="Email" placeholder="Email" id="email"/>
             </div>
             <div class="inputGroup">
-              <input type="password" placeholder="Password" />
+              <input type="password" placeholder="Password" id="password" />
             </div>
             <div class="inputGroup">
               <input type="number" placeholder="Phone Number" />
             </div>
 
-            <button type="submit" class="submitBtn">Submit</button>
+            <button type="submit" class="submitBtn" id="register">Submit</button>
           </form>
 
           <form action="" class="form login">
             <div class="inputGroup">
-              <input type="Email" placeholder="Email" />
+              <input type="Email" placeholder="Email" id="login_email"  />
             </div>
             <div class="inputGroup">
-              <input type="password" placeholder="Password" />
+              <input type="password" placeholder="Password" id="login_password" />
             </div>
 
-            <button type="submit" class="submitBtn">Login</button>
+            <button type="submit" class="submitBtn" id="login">Login</button>
           </form>
         </div>
       </div>
@@ -90,6 +90,9 @@
 
     
     
-      <script src="app.js"></script>
+      <script type="module" src="app.js"></script>
+
+
+     
   </body>
 </html>
