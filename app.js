@@ -29,10 +29,12 @@ signupBtn.addEventListener('click',()=>{
 
 
 loginMain.addEventListener('click',()=>{
-    modalForm.style.display = "flex" 
-    // if( modalForm.style.display = "flex" ){
-    //     modalForm.style.display = "none" 
-    // }
+
+    if( modalForm.style.display === "none" ){
+        modalForm.style.display = "flex" 
+    }else{
+        modalForm.style.display = "none"
+    }
  })
 
 
