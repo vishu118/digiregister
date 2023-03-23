@@ -52,7 +52,7 @@ document.getElementById("register").addEventListener("click", function(e) {
 //----- End
 
 //----- Login code start	  
-document.getElementById("login").addEventListener("click", function(e) {
+document.getElementById("loginBtn").addEventListener("click", function(e) {
     e.preventDefault();
     var email =  document.getElementById("login_email").value;
     var password = document.getElementById("login_password").value;
@@ -63,7 +63,7 @@ document.getElementById("login").addEventListener("click", function(e) {
       const user = userCredential.user;
       console.log(user);
       alert(user.email+" Login successfully!!!");
-      document.getElementById('logout').style.display = 'block';
+      loginMain.innerText = 'Logut';
       // ...
     })
     .catch((error) => {
@@ -74,24 +74,24 @@ document.getElementById("login").addEventListener("click", function(e) {
     });		  		  
 });
 //----- End
-
+const loginMain = document.getElementById('login')
 //----- Logout code start	  
-// document.getElementById("logout").addEventListener("click", function() {
-//     signOut(auth).then(() => {
-//         // Sign-out successful.
-//         console.log('Sign-out successful.');
-//         alert('Sign-out successful.');
-//         document.getElementById('logout').style.display = 'none';
-//       }).catch((error) => {
-//         // An error happened.
-//         console.log('An error happened.');
-//       });		  		  
-// });
+loginMain.addEventListener("click", function() {
+    signOut(auth).then(() => {
+        // Sign-out successful.
+        console.log('Sign-out successful.');
+        alert('Sign-out successful.');
+        loginMain.innerText = 'Login';
+      }).catch((error) => {
+        // An error happened.
+        console.log('An error happened.');
+      });		  		  
+});
 
 
     
 
-const loginMain = document.getElementById('login')
+
 const signupBtn = document.querySelector(".signupBtn")
 const loginBtn = document.querySelector(".loginBtn")
 const moveBtn = document.querySelector(".moveBtn")
